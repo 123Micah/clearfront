@@ -39,8 +39,9 @@ const routes = [
 
   {
     path: '/student/submissions/:id',
-    component: SubmissionDetails
+    component: SubmissionDetails,
     name: 'SubmissionDetails',
+    meta: { requiresAuth: true, role: 'student' }
   },
 
 
