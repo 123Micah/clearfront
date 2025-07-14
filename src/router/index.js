@@ -11,6 +11,7 @@ import SubmissionList from '../views/Student/SubmissionList.vue';
 import DepartmentsManage from '../views/Staff/DepartmentsManage.vue';
 import FormFieldsManage from '../views/Staff/FormFieldsManage.vue';
 import SubmissionsManage from '../views/Staff/SubmissionsManage.vue';
+import SubmissionDetails from '../views/Student/SubmissionDetails.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -38,8 +39,8 @@ const routes = [
 
   {
     path: '/student/submissions/:id',
+    component: SubmissionDetails
     name: 'SubmissionDetails',
-    component: () => import('@/views/student/SubmissionDetails.vue'),
   },
 
 
